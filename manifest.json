@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "HUIT • Hỗ trợ đăng ký học phần",
+  "version": "0.2.0",
+  "description": "Đọc học phần, theo dõi sĩ số và lưu lớp ưu tiên trên cổng HUIT.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://dkhp.huit.edu.vn/DangKyHocPhan*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
